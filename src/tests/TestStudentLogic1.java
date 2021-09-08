@@ -22,12 +22,12 @@ public class TestStudentLogic1 {
 	public void setUp() throws Exception {
 	}
 	@Test//test to see if name is equal
-	public void testStudentName() {
+	public void testStudentNameIsEqual() {
 		assertEquals(studentName, student.printStudentName());
 	}
 
 	@Test//test to see if final year is true
-	public void isLastYearOfHStest() {
+	public void isLastYearOfHSTruetest() {
 		student.setSchoolYear(4);
     	assertTrue(studentBL.isLastYearOfHS(student));
 	}
@@ -38,7 +38,7 @@ public class TestStudentLogic1 {
 		
 	}
 	@Test
-	public void testGpaLetterGradeEquivelant() {
+	public void testGpaLetterGradeEquivelantTrue() {
 	   student.setGpa(2.4);
 	   char gpaGradeEquiv = studentBL.gpaLetterGradeEquivalent(student);
 	   assertEquals('C',gpaGradeEquiv);

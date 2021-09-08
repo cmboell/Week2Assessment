@@ -26,7 +26,7 @@ public class TestStudentLogic2 {
 		assertNotEquals(studentName, student.printStudentName());
 	}
 	@Test//this test tests to see if it is not last year
-	public void isLastYearOfHStest() {
+	public void isLastYearOfHSFalsetest() {
 		student.setSchoolYear(3);
     	assertFalse(studentBL.isLastYearOfHS(student));
 	}
